@@ -1,9 +1,7 @@
-import * as postcssJitProps from 'postcss-jit-props';
-import * as openProps from 'open-props';
-const config = {
-	plugins: [
-		postcssJitProps(openProps),
-	]
-};
+import postcssJitProps from 'postcss-jit-props';
+import OpenProps from 'open-props';
 
-export default config;
+
+export const plugins = [
+	postcssJitProps(OpenProps),
+];
